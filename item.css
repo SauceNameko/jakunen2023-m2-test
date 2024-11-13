@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(100, 145, 100);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.title {
+    margin-left: 50px;
+}
+
+.title>a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+    height: 100%;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .3s all;
+}
+
+.nav>a:hover {
+    border-bottom: 4px solid rgba(158, 93, 93, .7);
+}
+
+.container.text-center {
+    margin-top: 150px;
+}
+
+.img-fluid.rounded-start {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body>div {
+    background-color: rgb(158, 93, 93);
+    color: white;
+    width: 40%;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.buy {
+    width: 30%;
+    padding: 10px 20px;
+    background-color: rgb(100, 145, 100);
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    text-decoration: none;
+    color: white;
+}
+
+.buy:hover {
+    background-color: rgb(72, 107, 72);
+}
+
+footer {
+    margin-top: 130px;
+    height: 80px;
+    background-color: rgba(158, 93, 93, .7);
+    padding: 20px 0 80px 0;
+}
+
+.icons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.copy-light {
+    text-align: center;
+}
+
+.mushi_tya,
+.pick-flex>img {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .8s;
+}
+
+.mushi_tya.is-active,
+.pick-flex>img.is-active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hum {
+    display: none;
+}
+
+.offcanvas {
+    display: none;
+}
+
+@media screen and (max-width:418px) {
+    .nav {
+        display: none;
+    }
+
+    .hum {
+        width: 50px;
+        height: 50px;
+        margin-right: 30px;
+        position: relative;
+        display: block;
+    }
+
+
+    .border {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .border:nth-of-type(1) {
+        top: 20%;
+    }
+
+    .border:nth-of-type(2) {
+        top: 50%;
+    }
+
+    .border:nth-of-type(3) {
+        top: 80%;
+    }
+
+    .offcanvas {
+        color: white;
+        display: block;
+        background-color: rgb(100, 145, 100);
+        transition: .3s all;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 500px;
+        width: 70%;
+    }
+
+    .offcanvas-body>a {
+        text-decoration: none;
+        color: white;
+    }
+    .card-title{
+    margin-bottom: 15px;
+    }
+    .img-fluid {
+    width: 100%;
+    }
+}
